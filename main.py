@@ -1,5 +1,3 @@
-<< << << < SEARCH
-== == == =
 # -*- coding: utf-8 -*-
 """
 植物大战僵尸 - Kivy 移动端入口
@@ -228,4 +226,3 @@ class PVZApp(App):
 
 if __name__ == "__main__":
     PVZApp().run()
->> >> >> > REPLACE
