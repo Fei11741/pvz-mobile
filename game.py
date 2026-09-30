@@ -1,5 +1,3 @@
-<< << << < SEARCH
-== == == =
 # -*- coding: utf-8 -*-
 """
 植物大战僵尸 - 游戏逻辑层（无渲染依赖）
@@ -199,7 +197,8 @@ class Game:
         if self.selected == "sunflower" and self.sun_count >= SUNFLOWER_COST:
             self.plants.append(Sunflower(row, col))
             self.sun_count -= SUNFLOWER_COST
-        elif self.selected == "peashooter" and self.sun_count >= PEASHOOTER_COST:
+        elif (self.selected == "peashooter"
+              and self.sun_count >= PEASHOOTER_COST):
             self.plants.append(Peashooter(row, col))
             self.sun_count -= PEASHOOTER_COST
 
@@ -224,5 +223,3 @@ class Game:
         self.bullets = [b for b in self.bullets if b.alive]
         self.zombies = [z for z in self.zombies if z.alive]
         self.suns = [s for s in self.suns if not s.collected]
-
->> >> >> > REPLACE
